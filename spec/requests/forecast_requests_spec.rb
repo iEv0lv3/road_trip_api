@@ -1,6 +1,6 @@
 require 'rails_helper'
-require './app/services/google/geocode_service'
-require './app/services/open_weather/weather_service'
+require './app/services/geocode_service'
+require './app/services/weather_service'
 
 RSpec.describe 'Forecast Service', type: :request do
   before :each do
