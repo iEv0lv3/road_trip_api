@@ -1,0 +1,290 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/search?Authorization=563492ad6f917000010000015053f73af347431594abf74e611a63d4&page=1&per_page=1&query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:19:46 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3a4152849550e1e26e80e3c745fef7d71587356386; expires=Wed, 20-May-20
+        04:19:46 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c11a66fd5c7cd-DEN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - '0237695bfe0000c7cdc6b91200000001'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>404 Not Found</title></head>
+        <body bgcolor="white">
+        <center><h1>404 Not Found</h1></center>
+        <hr><center>nginx/1.14.2</center>
+        </body>
+        </html>
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:19:46 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/search?Authorization=563492ad6f917000010000015053f73af347431594abf74e611a63d4&page=1&per_page=1&query=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:23:50 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbc31f2eae00cbd84c46058f47cc99d031587356630; expires=Wed, 20-May-20
+        04:23:50 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c179a6b45f794-DEN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02376d14810000f794169b4200000001
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>404 Not Found</title></head>
+        <body bgcolor="white">
+        <center><h1>404 Not Found</h1></center>
+        <hr><center>nginx/1.14.2</center>
+        </body>
+        </html>
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:23:50 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/search?Authorization=563492ad6f917000010000015053f73af347431594abf74e611a63d4&query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:26:37 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4730588ce73fe5ee38b707d1038bdd7a1587356796; expires=Wed, 20-May-20
+        04:26:36 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c1bacefaec7b1-DEN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02376fa0140000c7b13a846200000001
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>404 Not Found</title></head>
+        <body bgcolor="white">
+        <center><h1>404 Not Found</h1></center>
+        <hr><center>nginx/1.14.2</center>
+        </body>
+        </html>
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:26:37 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/search?query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Authorization:
+      - 563492ad6f917000010000015053f73af347431594abf74e611a63d4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:40:29 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d130dc208bfd5c2540c5902b392f1c7421587357629; expires=Wed, 20-May-20
+        04:40:29 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c2ffda98cc7b1-DEN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02377c52890000c7b12f872200000001
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>404 Not Found</title></head>
+        <body bgcolor="white">
+        <center><h1>404 Not Found</h1></center>
+        <hr><center>nginx/1.14.2</center>
+        </body>
+        </html>
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:40:29 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?page=1&per_page=1&query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Authorization:
+      - 563492ad6f917000010000015053f73af347431594abf74e611a63d4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:43:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '415'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2dcda07d60631aabf3a3d11f21e7edfb1587357782; expires=Wed, 20-May-20
+        04:43:02 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=d73ef6ab5a9b2563aa20c26cb752406a21587357782; expires=Wed, 20-May-20
+        04:43:02 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 02377ea94b0000c7a97a92e200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19993'
+      X-Ratelimit-Reset:
+      - '1589872288'
+      X-Request-Id:
+      - fca84206-0c15-4d41-93ef-7df6420ab7fc
+      X-Runtime:
+      - '0.065363'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c33bbaddfc7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":93,"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"liked":false}],"next_page":"https://api.pexels.com/v1/search/?page=2&per_page=1&query=denver%2C+co"}'
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:43:02 GMT
+recorded_with: VCR 5.1.0

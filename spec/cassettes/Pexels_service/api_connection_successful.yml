@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?page=1&per_page=1&query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Authorization:
+      - 563492ad6f917000010000015053f73af347431594abf74e611a63d4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:52:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '415'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d73ef6ab5a9b2563aa20c26cb752406a21587357782; expires=Wed, 20-May-20
+        04:43:02 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=df244f62fa110ff4c41dc41d3e933f3811587358337; expires=Wed, 20-May-20
+        04:52:17 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '02378721570000c7bddabdf200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19992'
+      X-Ratelimit-Reset:
+      - '1589872288'
+      X-Request-Id:
+      - fca84206-0c15-4d41-93ef-7df6420ab7fc
+      X-Runtime:
+      - '0.065363'
+      X-Tyk-Cached-Response:
+      - '1'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c41488fabc7bd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":93,"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"liked":false}],"next_page":"https://api.pexels.com/v1/search/?page=2&per_page=1&query=denver%2C+co"}'
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:52:17 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?page=1&per_page=1&query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Authorization:
+      - 563492ad6f917000010000015053f73af347431594abf74e611a63d4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Apr 2020 04:52:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '415'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6e857f1604752c792b85f18449fc2bcc1587358337; expires=Wed, 20-May-20
+        04:52:17 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      - __cfduid=d73ef6ab5a9b2563aa20c26cb752406a21587357782; expires=Wed, 20-May-20
+        04:43:02 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '02378722390000f784ae152200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19991'
+      X-Ratelimit-Reset:
+      - '1589872288'
+      X-Request-Id:
+      - fca84206-0c15-4d41-93ef-7df6420ab7fc
+      X-Runtime:
+      - '0.065363'
+      X-Tyk-Cached-Response:
+      - '1'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 586c4149fdf1f784-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total_results":93,"page":1,"per_page":1,"photos":[{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"},"liked":false}],"next_page":"https://api.pexels.com/v1/search/?page=2&per_page=1&query=denver%2C+co"}'
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 04:52:17 GMT
+recorded_with: VCR 5.1.0

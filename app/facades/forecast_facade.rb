@@ -1,5 +1,6 @@
 require './app/models/location'
 require './app/models/forecast'
+require './app/models/pexels_image'
 
 class ForecastFacade
   attr_reader :location,
