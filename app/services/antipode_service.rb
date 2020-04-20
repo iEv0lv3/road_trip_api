@@ -5,7 +5,7 @@ class AntipodeService
       faraday.params['lat'] = lat
       faraday.params['long'] = long
     end
-    binding.pry
+
     JSON.parse(response.body, symbolize_names: true)
   end
 
