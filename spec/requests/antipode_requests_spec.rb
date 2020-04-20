@@ -5,11 +5,12 @@ require './app/services/antipode_service'
 RSpec.describe 'Antipodes API', :vcr, type: :request do
   before :each do
     @location = 'Hong Kong'
-    @geo = ForecastFacade.new(@location)
-    @antipode_facade = AntipodeFacade.new(@geo.geo_location.lat, @geo.geo_location.long)
+    @antipode_facade = AntipodeFacade.new(@location)
   end
 
   it 'Connect to service successfully' do
-    binding.pry
+    get "/api/v1/antipode?location=#{@location}"
+
+    expect(response).to be_successful
   end
 end
