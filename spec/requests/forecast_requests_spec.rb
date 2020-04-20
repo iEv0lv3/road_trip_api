@@ -9,13 +9,13 @@ RSpec.describe 'Forecast Service', type: :request do
   end
 
   it 'returns city lat and long', :vcr do
-    expect(@forecast.geo_location.lat).to eq(39.7392358)
-    expect(@forecast.geo_location.long).to eq(-104.990251)
+    expect(@forecast.location_coordinates.lat).to eq(39.7392358)
+    expect(@forecast.location_coordinates.long).to eq(-104.990251)
   end
 
   it 'returns weather forecast lat and long', :vcr do
-    expect(@forecast.weather_forecast.response[:lat]).to eq(39.74)
-    expect(@forecast.weather_forecast.response[:lon]).to eq(-104.99)
+    expect(@forecast.weather.forecast[:lat]).to eq(39.74)
+    expect(@forecast.weather.forecast[:lon]).to eq(-104.99)
   end
 
   it 'expect forecast request success', :vcr do

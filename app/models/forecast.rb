@@ -1,8 +1,7 @@
 class Forecast
-  attr_reader :response
+  attr_reader :forecast
 
-  def initialize(location)
-    @weather_service = WeatherService.new
-    @response = @weather_service.weather_data(location.lat, location.long)
+  def initialize(location_forecast)
+    @forecast = location_forecast
   end
 end

@@ -1,8 +1,8 @@
 class WeatherService
-  def weather_data(lat, long)
+  def weather_data(location)
     response = connection.get('/data/2.5/onecall') do |faraday|
-      faraday.params['lat'] = lat
-      faraday.params['lon'] = long
+      faraday.params['lat'] = location.lat
+      faraday.params['lon'] = location.long
       faraday.params['units'] = 'imperial'
     end
 

@@ -14,6 +14,6 @@ RSpec.describe 'Pexels service', :vcr, type: :request do
   end
 
   it 'returns an image url' do
-    expect(@pexels_facade.image).to eq("https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg")
+    expect(@pexels_facade.image.image_url).to eq("https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg")
   end
 end
