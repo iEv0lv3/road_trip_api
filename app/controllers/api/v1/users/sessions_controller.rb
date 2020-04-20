@@ -1,8 +1,13 @@
 class Api::V1::Users::SessionsController < ApplicationController
   def create
-    if user == User.authenticate(user_params[:email], params[:password])
-      session[:current_user] = user.id
-      redirect_to root_url
+    @user = User.find_by(email: params[:user][:email])
+                .try(:authenticate, params[:user][:password])
+
+    if @user
+      session[:current_user] = @user.id
+      render json: { status: 201, body: UserSerializer.new(@user) }
+    else
+      render status: 400
     end
   end
 
