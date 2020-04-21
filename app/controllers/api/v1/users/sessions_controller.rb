@@ -7,7 +7,7 @@ class Api::V1::Users::SessionsController < ApplicationController
       session[:current_user] = @user.id
       render json: { status: 201, body: UserSerializer.new(@user) }
     else
-      render status: 400
+      render json: { status: 400, body: user.errors.full_messages.to_sentence }
     end
   end
 
