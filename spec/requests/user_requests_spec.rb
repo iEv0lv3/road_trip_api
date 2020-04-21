@@ -9,6 +9,19 @@ RSpec.describe 'Users API', :vcr, type: :request do
         password_confirmation: 'password'
       }
     }
+
+    expect(response).to be_successful
+  end
+
+  it 'unsuccessful register request' do
+    post "/api/v1/users", params: {
+      user: {
+        email: 'whatever2@example.com'
+      }
+    }
+
+    expect(response.status).to eq(400)
+    expect(response).to_not be_successful
   end
 
   it 'successful login request' do
@@ -23,5 +36,7 @@ RSpec.describe 'Users API', :vcr, type: :request do
         password: 'password'
       }
     }
+
+    expect(response).to be_successful
   end
 end

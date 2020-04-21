@@ -1,13 +1,13 @@
 class Api::V1::Users::SessionsController < ApplicationController
   def create
-    @user = User.find_by(email: params[:user][:email])
-                .try(:authenticate, params[:user][:password])
+    @user = User.find_by(email: user_params[:email])
+                .try(:authenticate, user_params[:password])
 
     if @user
       session[:current_user] = @user.id
-      render json: { status: 201, body: UserSerializer.new(@user) }
+      render json: { body: UserSerializer.new(@user) }, status: 201
     else
-      render json: { status: 400, body: user.errors.full_messages.to_sentence }
+      render json: { body: user.errors.full_messages.to_sentence }, status: 400
     end
   end
 
