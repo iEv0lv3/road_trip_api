@@ -18,6 +18,8 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<GOOGLE_API_KEY>') { ENV['GOOGLE_API_KEY'] }
   config.filter_sensitive_data('<WEATHER_API_KEY>') { ENV['WEATHER_API_KEY'] }
+  config.filter_sensitive_data('<PEXELS_API_KEY>') { ENV['PEXELS_API_KEY'] }
+  config.filter_sensitive_data('<ANTIPODE_API_KEY>') { ENV['ANTIPODE_API_KEY'] }
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
