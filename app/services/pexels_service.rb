@@ -1,6 +1,6 @@
 class PexelsService
   def find_image(location)
-    Rails.cache.fetch('recent_image', expires_in: 6.hours) do
+    Rails.cache.fetch(location, expires_in: 6.hours) do
       @response = connection.get("/v1/search?") do |faraday|
         faraday.params['query'] = location
         faraday.params['page'] = 1
