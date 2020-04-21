@@ -6,7 +6,6 @@ class MapsService
     end
 
     response = JSON.parse(response.body, symbolize_names: true)
-    response[:routes][0][:legs][0][:duration]
   end
 
   private
