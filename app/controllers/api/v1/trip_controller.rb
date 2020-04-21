@@ -1,4 +1,4 @@
-class Api::V1::RoadTrip::TripController < ApplicationController
+class Api::V1::TripController < ApplicationController
   def new
     user = User.find_by(api_key: trip_params[:api_key])
     if !user.nil?
