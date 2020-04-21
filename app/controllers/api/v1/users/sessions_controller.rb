@@ -6,7 +6,7 @@ class Api::V1::Users::SessionsController < ApplicationController
     if @user
       render json: { body: UserSerializer.new(@user) }, status: 201
     else
-      render json: { body: 'User not found' }, status: 400
+      render json: { body: 'User credentials incorrect' }, status: 400
     end
   end
 

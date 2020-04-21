@@ -53,6 +53,6 @@ RSpec.describe 'Users API', :vcr, type: :request do
     }
 
     expect(response.status).to eq(400)
-    expect(response.body).to include('User not found')
+    expect(response.body).to include('User credentials incorrect')
   end
 end
