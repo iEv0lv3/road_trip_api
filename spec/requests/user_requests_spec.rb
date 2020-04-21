@@ -11,6 +11,12 @@ RSpec.describe 'Users API', :vcr, type: :request do
     }
 
     expect(response).to be_successful
+
+    user_response = JSON.parse(response.body, symbolize_names: true)
+
+    expect(user_response[:data][:type]).to eq('user')
+    expect(user_response[:data][:attributes][:email]).to eq('whatever2@example.com')
+    expect(user_response[:data][:attributes][:api_key]).to_not eq(nil)
   end
 
   it 'unsuccessful register request' do
@@ -38,6 +44,11 @@ RSpec.describe 'Users API', :vcr, type: :request do
     }
 
     expect(response).to be_successful
+
+    user_response = JSON.parse(response.body, symbolize_names: true)
+
+    expect(user_response[:data][:type]).to eq('user')
+    expect(user_response[:data][:attributes][:email]).to eq('wowemail@mail.com')
   end
 
   it 'unsuccessful login request' do

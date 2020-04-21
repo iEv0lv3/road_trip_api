@@ -16,6 +16,13 @@ RSpec.describe 'Road Trip API', :vcr, type: :request do
     }
 
     expect(response).to be_successful
+
+    trip_response = JSON.parse(response.body, symbolize_names: true)
+
+    expect(trip_response[:data][:type]).to eq('road_trip')
+    expect(trip_response[:data][:attributes][:origin]).to eq('Denver, CO')
+    expect(trip_response[:data][:attributes][:destination]).to eq('Pueblo, CO')
+    expect(trip_response[:data][:attributes][:travel_time]).to eq('1 hour 48 mins')
   end
 
   it 'unsuccessful trip request' do

@@ -22,5 +22,12 @@ RSpec.describe 'Forecast Service', type: :request do
     get "/api/v1/forecast?location=#{@location}"
 
     expect(response).to be_successful
+
+    forecast_data = JSON.parse(response.body, symbolize_names: true)
+
+    expect(forecast_data[:data][:type]).to eq('extended_forecast')
+    expect(forecast_data[:data][:attributes][:location]).to eq('Denver, CO')
+    expect(forecast_data[:data][:attributes][:hourly_forecast].size).to eq(48)
+    expect(forecast_data[:data][:attributes][:daily_forecast].size).to eq(8)
   end
 end

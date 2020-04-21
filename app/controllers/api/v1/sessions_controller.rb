@@ -4,9 +4,9 @@ class Api::V1::SessionsController < ApplicationController
                 .try(:authenticate, user_params[:password])
 
     if @user
-      render json: { body: UserSerializer.new(@user) }, status: 201
+      render json: UserSerializer.new(@user), status: 201
     else
-      render json: { body: 'User credentials incorrect' }, status: 400
+      render json: 'User credentials incorrect', status: 400
     end
   end
 
