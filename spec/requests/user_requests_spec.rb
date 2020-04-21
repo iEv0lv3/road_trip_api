@@ -39,4 +39,20 @@ RSpec.describe 'Users API', :vcr, type: :request do
 
     expect(response).to be_successful
   end
+
+  it 'unsuccessful login request' do
+    User.create!(
+      email: 'wowemail@mail.com',
+      password: 'password'
+    )
+
+    post "/api/v1/sessions", params: {
+      user: {
+        email: 'wowemail@mail.com',
+      }
+    }
+
+    expect(response.status).to eq(400)
+    expect(response.body).to include('User not found')
+  end
 end

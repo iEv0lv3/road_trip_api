@@ -4,10 +4,9 @@ class Api::V1::Users::SessionsController < ApplicationController
                 .try(:authenticate, user_params[:password])
 
     if @user
-      session[:current_user] = @user.id
       render json: { body: UserSerializer.new(@user) }, status: 201
     else
-      render json: { body: user.errors.full_messages.to_sentence }, status: 400
+      render json: { body: 'User not found' }, status: 400
     end
   end
 

@@ -1,5 +1,6 @@
 class RoadTripFacade
-  attr_reader :trip
+  attr_reader :trip,
+              :trip_duration
 
   def initialize(trip_params)
     @origin = trip_params[:origin]
