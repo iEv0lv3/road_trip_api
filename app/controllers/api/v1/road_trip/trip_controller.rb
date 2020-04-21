@@ -1,6 +1,6 @@
 class Api::V1::RoadTrip::TripController < ApplicationController
   def new
-    user = User.find_by(trip_params[:user][:api_key])
+    user = User.find_by(api_key: trip_params[:api_key])
     if !user.nil?
       road_trip = RoadTripFacade.new(trip_params)
       render json: { status: 201, body: RoadTripSerializer.new(road_trip.trip) }
