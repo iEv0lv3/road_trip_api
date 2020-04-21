@@ -1,6 +1,5 @@
 class PexelsImageFacade
-  attr_reader :pexels,
-              :image
+  attr_reader :image
 
   def initialize(location)
     @pexels_service = PexelsService.new

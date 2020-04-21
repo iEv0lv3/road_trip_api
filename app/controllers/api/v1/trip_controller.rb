@@ -1,5 +1,5 @@
 class Api::V1::TripController < ApplicationController
-  def new
+  def create
     user = User.find_by(api_key: trip_params[:api_key])
     if !user.nil?
       road_trip = RoadTripFacade.new(trip_params)
