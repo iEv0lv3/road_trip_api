@@ -5,7 +5,7 @@ class MapsService
       faraday.params['destination'] = destination
     end
 
-    response = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
